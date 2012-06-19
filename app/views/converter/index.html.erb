@@ -1,0 +1,5 @@
+<%= form_for :text, :url => {:action => :process_links} do |f| %>
+	Insert links, line by line:<br />
+	<%= f.text_area :links %><br />
+	<%= f.submit "Convert" %>
+<% end  %>
